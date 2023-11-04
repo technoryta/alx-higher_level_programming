@@ -16,24 +16,18 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
-    if operator == '+': 
+    if operator == '+':
         result = add(a, b)
         print("{} {} {} = {}".format(a, operator, b, result))
     elif operator == '-':
-        result = sub(a,b)
+        result = sub(a, b)
         print("{} {} {} = {}".format(a, operator, b, result))
     elif operator == '*':
-        result = mul(a,b)
+        result = mul(a, b)
         print("{} {} {} = {}".format(a, operator, b, result))
     elif operator == '/':
-        result == div(a,b)
+        result == div(a, b)
         print("{} {} {} = {}".format(a, operator, b, result))
     else:
-         print ("Unknown operator. Available operators: +, -, *")
-         sys.exit(1)
-
-
-
-
-
-
+        print("Unknown operator. Available operators: +, -, *")
+        sys.exit(1)
