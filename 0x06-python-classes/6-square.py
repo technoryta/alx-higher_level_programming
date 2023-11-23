@@ -5,7 +5,7 @@
 class Square:
     """Instantiate with option"""
 
-    def __init__(self, size=0, position = (0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Initialise the square class
 
             Args:
@@ -37,10 +37,12 @@ class Square:
 
     @position.setter
     def postion(self, position):
-        if not isinstance(position, tuple) or len(position) != 2 or position(0) < 0 or position (1) < 0:
+        if not isinstance(position, tuple) or len(position) != 2:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        if position[0] < 0 or position[1] < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = position
-    
+
     def area(self):
         """Calculates square area
 
@@ -53,4 +55,4 @@ class Square:
             print()
         else:
             for x in range(self.__size):
-                print("{}{}".format(" " * self.__position[0], "#" * self.__size))
+                print("{}{}".format(" " * self.position[0], "#" * self.size))
