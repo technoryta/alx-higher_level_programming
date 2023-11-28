@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-
+""" adds integers"""
 def add_integer(a, b=98):
-	"""adds two intergers
+	"""adds two integers or floats
 	
-	args:
+	Args:
 		a: first integer
 		b: second integer
 	
 	return:
 		sum of a and b
+
+	Raises:
+		TypeError: if neither arguments are integer not float
 	"""
 	if not isinstance(a, int) and not isinstance(a, float):
 		raise TypeError("a must be an integer")
