@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+chmod u+x ./
 git add .
 git commit -m 'updated script'
 git push -u origin master
