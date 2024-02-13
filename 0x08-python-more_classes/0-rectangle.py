@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+""" Initialising """
+
 
 class Rectangle:
     """
-    Rectange class
+    Rectanlge class
     """
     pass
