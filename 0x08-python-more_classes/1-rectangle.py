@@ -1,12 +1,20 @@
 #!/usr/bin/python3
-""" Initialising """
+""" CLass defines rectangle """
 
 
 class Rectangle:
     """
-    Rectanlge class
-    """
+    Rectangle class"""
+
     def __init__(self, width=0, height=0):
+        """Initialisation
+        Args:
+            width: width of rect
+            height: height of rect
+        Raises:
+            TypeError: if inputs not int
+            ValueError: if inputs negative
+        """
         self.width = width
         self.height = height
 
