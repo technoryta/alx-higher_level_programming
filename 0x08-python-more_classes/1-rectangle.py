@@ -3,8 +3,7 @@
 
 
 class Rectangle:
-    """
-    Rectangle class"""
+    """Rectangle class"""
 
     def __init__(self, width=0, height=0):
         """Initialisation
@@ -20,7 +19,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """ returns w"""
+        """ retrieves w"""
         return self.__width
 
     @width.setter
@@ -34,8 +33,8 @@ class Rectangle:
 
     @property
     def height(self):
-        """returns h"""
-        return self__.height
+        """retrieves h"""
+        return self.__height
 
     @height.setter
     def height(self, value):
