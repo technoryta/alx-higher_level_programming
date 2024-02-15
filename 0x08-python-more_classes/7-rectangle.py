@@ -60,7 +60,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         rectangle = ""
-        horizontal = str(Rectangle.print_symbol) * self.__width
+        horizontal = str(self.print_symbol) * self.__width
         for i in range(self.__height):
             rectangle += "\n" + horizontal
         return (rectangle)
