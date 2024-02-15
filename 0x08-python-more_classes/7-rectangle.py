@@ -18,7 +18,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        self.number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -60,11 +60,16 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         rectangle = ""
-        horizontal = str(self.print_symbol) * self.__width
-        for i in range(self.__height):
-            rectangle += "\n" + horizontal
+        for column in range(self.__height):
+            for row in range(self.__width):
+                try:
+                    rectangle += str(self.print_symbol)
+                except Exception:
+                    rectangle += type(self).print_symbol
+            if column < self.__height - 1:
+                rectangle += "\n"
         return (rectangle)
-
+    
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.height})"
 
