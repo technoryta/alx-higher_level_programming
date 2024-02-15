@@ -63,4 +63,6 @@ class Rectangle:
         return (rectangle)
 
     def __repr__(self):
-        return f"Rectangle({self.__width}, {self.__height})"
+        recta = "Rectangle(" + str(self.__width)
+        recta += ", " + str(self.__height) + ")"
+        return (recta)
