@@ -6,4 +6,4 @@ Module that checks if object is a class instance
 
 def is_same_class(obj, a_class):
     """Returns true if object is class instance"""
-    return isinstance(obj, a_class)
+    return isinstance(type(obj) == a_class)
