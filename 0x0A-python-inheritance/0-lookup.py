@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Module that returne list of methods and attributes
 of an object
 """
