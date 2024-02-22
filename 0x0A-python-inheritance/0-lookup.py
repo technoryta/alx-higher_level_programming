@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-""" Function that retruns list of methods and attributes"""
+""" 
+Module that returne list of methods and attributes
+of an object
+"""
 
 
 def lookup(obj):
+    """Atrributes and methods are returned"""
     return dir(obj)
