@@ -3,7 +3,7 @@
 
 
 def inherits_from(obj, a_class):
-    """Returns true if object is inherits from a class
-    otherwise, returns false
+    """Returns true if object is inherits a class
+    directly or indirectly; otherwise, returns false
     """
     return (isinstance(obj, a_class) and type(obj) != a_class)
