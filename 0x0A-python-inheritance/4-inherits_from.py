@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+"""Module that checks if object inherits"""
+
+
+def inherits_from(obj, a_class):
+    """Returns true if object is inherits from a class
+    otherwise, returns false
+    """
+    return isinstance(obj, a_class)
