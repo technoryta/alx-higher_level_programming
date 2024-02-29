@@ -7,4 +7,4 @@ def read_file(filename=""):
 	with open(filename) as f:
 		myfile = f.read()
 	for line in myfile:
-		print(line)
+		print(line, end="")
