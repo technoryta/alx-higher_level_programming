@@ -3,6 +3,6 @@
 
 
 def write_file(filename="", text=""):
-	"""function writes string to text"""
-	with open(filename, "w", encoding="utf-8") as f:
-		return f.write(text)
+    """function writes string to text"""
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
