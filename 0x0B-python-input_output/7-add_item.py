@@ -14,5 +14,4 @@ try:
 except FileNotFoundError:
     members = []
 members.extend(sys.argv[1:])
-save_to_json_file(members, "add_items.json")
-
+save_to_json_file(members, "add_item.json")
