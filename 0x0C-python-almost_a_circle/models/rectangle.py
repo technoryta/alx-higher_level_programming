@@ -7,10 +7,10 @@ class Rectangle(Base):
     """Inherits from Base class"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialise"""
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     """Getters"""
@@ -33,7 +33,7 @@ class Rectangle(Base):
     """Setters"""
     @height.setter
     def height(self, value):
-        if not isinstance(value, int):
+        if (type(value) is not int):
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
